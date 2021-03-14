@@ -42,15 +42,25 @@
 
     // Collapse Navbar
     var navbarCollapse = function() {
+        let windowWidth = window.innerWidth;
+
         if ($("#mainNav").offset().top > 100) {
             $("#mainNav").addClass("navbar-shrink");
             $("#mainNav").addClass("navbar-shrink");
 
-            $("#website-icon").find("svg").find("path").css("fill", "#000000");
+            if (windowWidth >= 992) {
+                $("#website-icon").find("svg").find("path").css("fill", "#000000");
+            }
         } else {
             $("#mainNav").removeClass("navbar-shrink");
-            $("#website-icon").find("svg").find("path").css("fill", "rgba(255, 255, 255, 0.5)");
 
+            if (windowWidth >= 992) {
+                $("#website-icon").find("svg").find("path").css("fill", "rgba(255, 255, 255, 0.5)");
+            }
+        }
+
+        if (windowWidth < 992) {
+            $("#website-icon").find("svg").find("path").css("fill", "#000000");
         }
     };
     // Collapse now if page is not at top
