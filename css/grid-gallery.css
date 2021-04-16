@@ -9,7 +9,7 @@
 }
 
 .gallery-block.grid-gallery a:hover {
-    opacity: 0.8;
+    opacity: 1.0;
 }
 
 .gallery-block.grid-gallery .item img {
