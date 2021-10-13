@@ -14,8 +14,9 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
     <link href="./css/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
     <link rel="stylesheet" href="./css/grid-gallery.css">
+    <link rel="stylesheet" href="./glightbox/glightbox.css">
+    <link href="./css/galeria.css" rel="stylesheet" />
 </head>
 
 <body id="container-galeria">
@@ -61,28 +62,30 @@
                 <h2>Autorretratos</h2>
             </div>
             <div class="row">
-                <div class="col-md-6 col-lg-4 item">
-                    <a class="lightbox" href="./assets/img/psicodelic.jpg">
+                <div class="col-md-6 col-lg-4 col-sm-12 item">
+                    <a class="glightbox" href="./assets/img/psicodelic.jpg">
                         <img class="img-fluid image scale-on-hover" style="background: url(./assets/img/psicodelic.jpg);">
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
-                    <a class="lightbox" href="./assets/img/the_music_of_the_night.jpg">
+                    <a class="glightbox" href="./assets/img/the_music_of_the_night.jpg">
                         <img class="img-fluid image scale-on-hover" style="background: url(./assets/img/the_music_of_the_night.jpg);">
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
-                    <a class="lightbox" href="./assets/img/psicodelic_2.jpg">
+                    <a class="glightbox" href="./assets/img/psicodelic_2.jpg">
                         <img class="img-fluid image scale-on-hover" style="background: url(./assets/img/psicodelic_2.jpg);">
                     </a>
                 </div>
             </div>
         </div>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-    <script>
-        baguetteBox.run('.grid-gallery', {
-            animation: 'slideIn'
+    <script src="./glightbox/glightbox.js"></script>
+    <script type="text/javascript">
+        var lightbox = GLightbox({
+            touchNavigation: true,
+            selector: 'glightbox',
+            loop: true
         });
     </script>
 </body>

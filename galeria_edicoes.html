@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Retratos em vermelho</title>
+    <title>Edições</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
 
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
@@ -13,8 +13,9 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
     <link href="./css/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
     <link rel="stylesheet" href="./css/grid-gallery.css">
+    <link rel="stylesheet" href="./glightbox/glightbox.css">
+    <link href="./css/galeria.css" rel="stylesheet" />
 </head>
 
 <body id="container-galeria">
@@ -61,42 +62,44 @@
             </div>
             <div class="row">
                 <div class="col-md-6 col-lg-4 item">
-                    <a class="lightbox" href="./assets/img/cartaz_final.jpg">
+                    <a class="glightbox" href="./assets/img/cartaz_final.jpg">
                         <img class="img-fluid image scale-on-hover" style="background: url(./assets/img/cartaz_final.jpg);">
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
-                    <a class="lightbox" href="./assets/img/american_psycho.jpg">
+                    <a class="glightbox" href="./assets/img/american_psycho.jpg">
                         <img class="img-fluid image scale-on-hover" style="background: url(./assets/img/american_psycho.jpg);">
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
-                    <a class="lightbox" href="./assets/img/IMG_9778_edit.jpg">
+                    <a class="glightbox" href="./assets/img/IMG_9778_edit.jpg">
                         <img class="img-fluid image scale-on-hover" style="background: url(./assets/img/IMG_9778_edit.jpg);">
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
-                    <a class="lightbox" href="./assets/img/IMG_9792_edit.jpg">
+                    <a class="glightbox" href="./assets/img/IMG_9792_edit.jpg">
                         <img class="img-fluid image scale-on-hover" style="background: url(./assets/img/IMG_9792_edit.jpg);">
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
-                    <a class="lightbox" href="./assets/img/janela2.jpg">
+                    <a class="glightbox" href="./assets/img/janela2.jpg">
                         <img class="img-fluid image scale-on-hover" style="background: url(./assets/img/janela2.jpg);">
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
-                    <a class="lightbox" href="./assets/img/quarto.jpg">
+                    <a class="glightbox" href="./assets/img/quarto.jpg">
                         <img class="img-fluid image scale-on-hover" style="background: url(./assets/img/quarto.jpg);">
                     </a>
                 </div>
             </div>
         </div>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-    <script>
-        baguetteBox.run('.grid-gallery', {
-            animation: 'slideIn'
+    <script src="./glightbox/glightbox.js"></script>
+    <script type="text/javascript">
+        var lightbox = GLightbox({
+            touchNavigation: true,
+            selector: 'glightbox',
+            loop: true
         });
     </script>
 </body>

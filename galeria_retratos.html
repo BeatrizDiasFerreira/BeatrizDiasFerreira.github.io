@@ -13,8 +13,9 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
     <link href="./css/styles.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
     <link rel="stylesheet" href="./css/grid-gallery.css">
+    <link rel="stylesheet" href="./glightbox/glightbox.css">
+    <link href="./css/galeria.css" rel="stylesheet" />
 </head>
 
 <body id="container-galeria">
@@ -26,8 +27,8 @@
                     <a class="btnBack" href="./index.html"><i class="fas fa-arrow-left"></i></a>
                     <a id="website-icon" class="navbar-brand js-scroll-trigger" href="./index.html" style="margin-right: 0px;">
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="45px" height="45px" viewBox="0 0 657.000000 508.000000" preserveAspectRatio="xMidYMid meet">
-                            <g transform="translate(0.000000,508.000000) scale(0.100000,-0.100000)"
-                                fill="#000000" stroke="none">
+                            <g transform="translate(0.000000,508.000000) scale(0.100000,-0.100000)" fill="#000000"
+                                stroke="none">
                                 <path d="M3190 4533 c-67 -36 -107 -90 -121 -168 -7 -36 -9 -149 -7 -290 4
                                 -256 8 -273 80 -342 62 -60 81 -63 363 -63 l256 0 -3 -62 -3 -63 -71 -6 c-589
                                 -53 -1101 -452 -1273 -992 -49 -155 -64 -267 -58 -447 9 -269 75 -472 227
@@ -45,9 +46,9 @@
                                 -146 752 67 1095 66 107 242 290 348 360 180 120 393 200 605 226 79 10 278 5
                                 373 -9z m-87 -718 c211 -45 394 -225 444 -437 61 -261 -66 -533 -305 -653
                                 -235 -118 -495 -74 -680 113 -70 72 -118 152 -146 246 -24 81 -24 239 0 320
-                                87 294 388 474 687 411z"/>
+                                87 294 388 474 687 411z" />
                                 <path d="M782 2148 l3 -1503 995 0 995 0 3 58 3 57 -941 0 -940 0 0 1385 0
-                                1385 940 0 940 0 0 60 0 60 -1000 0 -1000 0 2 -1502z"/>
+                                1385 940 0 940 0 0 60 0 60 -1000 0 -1000 0 2 -1502z" />
                             </g>
                         </svg>
                     </a>
@@ -61,37 +62,39 @@
             </div>
             <div class="row">
                 <div class="col-md-6 col-lg-4 item">
-                    <a class="lightbox" href="./assets/img/haicai_final.jpg">
+                    <a class="glightbox" href="./assets/img/haicai_final.jpg">
                         <img class="img-fluid image scale-on-hover" style="background: url(./assets/img/haicai_final.jpg);">
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
-                    <a class="lightbox" href="./assets/img/IMG_9052.jpg">
+                    <a class="glightbox" href="./assets/img/IMG_9052.jpg">
                         <img class="img-fluid image scale-on-hover" style="background: url(./assets/img/IMG_9052.jpg);">
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
-                    <a class="lightbox" href="./assets/img/IMG_0031.jpg">
+                    <a class="glightbox" href="./assets/img/IMG_0031.jpg">
                         <img class="img-fluid image scale-on-hover" style="background: url(./assets/img/IMG_0031.jpg);">
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
-                    <a class="lightbox" href="./assets/img/vogue.jpg">
+                    <a class="glightbox" href="./assets/img/vogue.jpg">
                         <img class="img-fluid image scale-on-hover" style="background: url(./assets/img/vogue.jpg);">
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
-                    <a class="lightbox" href="./assets/img/PSX_20190926_122306.jpg">
+                    <a class="glightbox" href="./assets/img/PSX_20190926_122306.jpg">
                         <img class="img-fluid image scale-on-hover" style="background: url(./assets/img/PSX_20190926_122306.jpg);">
                     </a>
                 </div>
             </div>
         </div>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-    <script>
-        baguetteBox.run('.grid-gallery', {
-            animation: 'slideIn'
+    <script src="./glightbox/glightbox.js"></script>
+    <script type="text/javascript">
+        var lightbox = GLightbox({
+            touchNavigation: true,
+            selector: 'glightbox',
+            loop: true
         });
     </script>
 </body>

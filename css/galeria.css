@@ -1,0 +1,27 @@
+@media only screen and (max-width: 1999px) {
+    .image{
+        max-width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .gallery-block.grid-gallery {
+        padding-top: 90px;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .mySlides img{
+        max-height:  320px !important;
+    }
+
+    .prev, .next{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 714px) {
+    .mySlides img{
+        max-width: 100% !important;
+    }
+}
