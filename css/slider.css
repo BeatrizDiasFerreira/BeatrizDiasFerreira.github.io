@@ -1,9 +1,12 @@
 /* Slideshow container */
+
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
 }
+
+
 /* Next & previous buttons */
 
 .prev,
@@ -60,6 +63,7 @@
     padding: 8px 12px;
     position: absolute;
     top: 0;
+    right: 0;
 }
 
 
@@ -120,16 +124,16 @@
     }
 }
 
-.pageSlider{
+.pageSlider {
     display: none;
 }
 
-.pageSlider .mySlides{
+.pageSlider .mySlides {
     max-width: 800px;
     max-height: 540px;
 }
 
-.mySlides img{
+.mySlides img {
     max-width: 800px;
     max-height: 450px;
 }
