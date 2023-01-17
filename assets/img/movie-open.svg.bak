@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Excel To HTML using codebeautify.org</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html>
+      <body>
+        <h1>My first SVG</h1>
+        <svg height="100" width="100">
+          <circle class="circle" cx="50" cy="50" r="50" stroke-width="1" fill="#86bc25" fill-opacity="0.4" />
+          <circle class="circle" cx="50" cy="50" r="35" stroke-width="1" fill="black" />
+          <circle class="circle" cx="50" cy="50" r="34" stroke-width="2" fill="#86bc25" />
+        </svg>
+      </body>
+    </html>
+  </body>
+</html>

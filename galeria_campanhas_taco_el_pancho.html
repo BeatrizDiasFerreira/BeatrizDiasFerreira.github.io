@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fotografia</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/grid-gallery.css">
+    <link rel="stylesheet" href="./glightbox/glightbox.css">
+    <link href="./css/galeria.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/slider.css">
+
+    <style>
+        #carousel-taco-media-off, #carousel-taco-audios {
+            height: auto !important;
+        }
+
+        audio {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body id="container-galeria">
+    <section class="gallery-block grid-gallery">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background: #FFFFFF;">
+            <div class="container" style="display: block;">
+                <div id="container-icons-nabar" style="display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: center;">
+                    <a class="btnBack" href="./index.html"><i class="fas fa-arrow-left"></i></a>
+                    <a id="website-icon" class="navbar-brand js-scroll-trigger" href="./index.html" style="margin-right: 0px;">
+                        <svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M20.84 2.18L16.91 2.96L19.65 6.5L21.62 6.1L20.84 2.18M13.97 3.54L12 3.93L14.75 7.46L16.71 7.07L13.97 3.54M9.07 4.5L7.1 4.91L9.85 8.44L11.81 8.05L9.07 4.5M4.16 5.5L3.18 5.69A2 2 0 0 0 1.61 8.04L2 10L6.9 9.03L4.16 5.5M2 10V20C2 21.11 2.9 22 4 22H20C21.11 22 22 21.11 22 20V10H2Z" />
+                        </svg>
+                    </a>
+                    <a class="navbar-brand js-scroll-trigger" href="./index.html" style="font-family: NexaBold; color: #000000;">Beatriz Dias Ferreira</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container" style="margin-top: 10px;">
+            <div class="heading">
+                <h2>Taco el Pancho</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 item">
+                    <a class="glightbox" href="#carousel-taco-instagram">
+                        <img class="img-fluid image scale-on-hover" style="background: url(./assets/img/posts/post_07/01.png);">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <a class="glightbox" href="#carousel-taco-revista">
+                        <img class="img-fluid image scale-on-hover" style="background: url(./assets/img/posts/post_08/01.png);">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <a class="glightbox" href="#carousel-taco-media-off">
+                        <img class="img-fluid image scale-on-hover" style="background: url(./assets/img/posts/post_09/01.png);">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <a class="glightbox" href="#carousel-taco-anuncios">
+                        <img class="img-fluid image scale-on-hover" style="background: url(./assets/img/posts/post_10/01.png);">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <a class="glightbox" href="#carousel-taco-audios">
+                        <img class="img-fluid image scale-on-hover" style="background: url(./assets/img/posts/post_07/05.png);">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="slideshow-container" style="display: none;" id="carousel-taco-instagram">
+
+        <div class="pageSlider page1" style="display: block;">
+            <div class="mySlides">
+                <div class="numbertext">1 / 7</div>
+                <img src="./assets/img/posts/post_07/01.png" class="imgInsideSlider">
+            </div>
+            <a class="prev" onclick="showPageSlider('.page7')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.page2')">&#10095;</a>
+            <br>
+            <div style="text-align:center">
+                <span class="dot active"></span>
+                <span class="dot" onclick="showPageSlider('.page2')"></span>
+                <span class="dot" onclick="showPageSlider('.page3')"></span>
+                <span class="dot" onclick="showPageSlider('.page4')"></span>
+                <span class="dot" onclick="showPageSlider('.page5')"></span>
+                <span class="dot" onclick="showPageSlider('.page6')"></span>
+                <span class="dot" onclick="showPageSlider('.page7')"></span>
+            </div>
+        </div>
+
+        <div class="pageSlider page2">
+            <div class="mySlides">
+                <div class="numbertext">2 / 7</div>
+                <img src="./assets/img/posts/post_07/02.png" class="imgInsideSlider">
+            </div>
+            <a class="prev" onclick="showPageSlider('.page1')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.page3')">&#10095;</a>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="showPageSlider('.page1')"></span>
+                <span class="dot active"></span>
+                <span class="dot" onclick="showPageSlider('.page3')"></span>
+                <span class="dot" onclick="showPageSlider('.page4')"></span>
+                <span class="dot" onclick="showPageSlider('.page5')"></span>
+                <span class="dot" onclick="showPageSlider('.page6')"></span>
+                <span class="dot" onclick="showPageSlider('.page7')"></span>
+            </div>
+        </div>
+
+        <div class="pageSlider page3">
+            <div class="mySlides">
+                <div class="numbertext">3 / 7</div>
+                <img src="./assets/img/posts/post_07/03.png" class="imgInsideSlider">
+            </div>
+            <a class="prev" onclick="showPageSlider('.page2')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.page4')">&#10095;</a>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="showPageSlider('.page1')"></span>
+                <span class="dot" onclick="showPageSlider('.page2')"></span>
+                <span class="dot active"></span>
+                <span class="dot" onclick="showPageSlider('.page4')"></span>
+                <span class="dot" onclick="showPageSlider('.page5')"></span>
+                <span class="dot" onclick="showPageSlider('.page6')"></span>
+                <span class="dot" onclick="showPageSlider('.page7')"></span>
+            </div>
+        </div>
+
+        <div class="pageSlider page4">
+            <div class="mySlides">
+                <div class="numbertext">4 / 7</div>
+                <img src="./assets/img/posts/post_07/04.png" class="imgInsideSlider">
+            </div>
+            <a class="prev" onclick="showPageSlider('.page3')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.page5')">&#10095;</a>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="showPageSlider('.page1')"></span>
+                <span class="dot" onclick="showPageSlider('.page2')"></span>
+                <span class="dot" onclick="showPageSlider('.page3')"></span>
+                <span class="dot active"></span>
+                <span class="dot" onclick="showPageSlider('.page5')"></span>
+                <span class="dot" onclick="showPageSlider('.page6')"></span>
+                <span class="dot" onclick="showPageSlider('.page7')"></span>
+            </div>
+        </div>
+
+        <div class="pageSlider page5">
+            <div class="mySlides">
+                <div class="numbertext">5 / 7</div>
+                <img src="./assets/img/posts/post_07/05.png" class="imgInsideSlider">
+            </div>
+            <a class="prev" onclick="showPageSlider('.page4')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.page6')">&#10095;</a>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="showPageSlider('.page1')"></span>
+                <span class="dot" onclick="showPageSlider('.page2')"></span>
+                <span class="dot" onclick="showPageSlider('.page3')"></span>
+                <span class="dot" onclick="showPageSlider('.page4')"></span>
+                <span class="dot active"></span>
+                <span class="dot" onclick="showPageSlider('.page6')"></span>
+                <span class="dot" onclick="showPageSlider('.page7')"></span>
+            </div>
+        </div>
+
+        <div class="pageSlider page6">
+            <div class="mySlides">
+                <div class="numbertext">6 / 7</div>
+                <img src="./assets/img/posts/post_07/06.png" class="imgInsideSlider">
+            </div>
+            <a class="prev" onclick="showPageSlider('.page5')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.page7')">&#10095;</a>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="showPageSlider('.page1')"></span>
+                <span class="dot" onclick="showPageSlider('.page2')"></span>
+                <span class="dot" onclick="showPageSlider('.page3')"></span>
+                <span class="dot" onclick="showPageSlider('.page4')"></span>
+                <span class="dot" onclick="showPageSlider('.page5')"></span>
+                <span class="dot active"></span>
+                <span class="dot" onclick="showPageSlider('.page7')"></span>
+            </div>
+        </div>
+
+        <div class="pageSlider page7">
+            <div class="mySlides">
+                <div class="numbertext">7 / 7</div>
+                <img src="./assets/img/posts/post_07/07.png" class="imgInsideSlider">
+            </div>
+            <a class="prev" onclick="showPageSlider('.page6')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.page1')">&#10095;</a>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="showPageSlider('.page1')"></span>
+                <span class="dot" onclick="showPageSlider('.page2')"></span>
+                <span class="dot" onclick="showPageSlider('.page3')"></span>
+                <span class="dot" onclick="showPageSlider('.page4')"></span>
+                <span class="dot" onclick="showPageSlider('.page5')"></span>
+                <span class="dot" onclick="showPageSlider('.page6')"></span>
+                <span class="dot active"></span>
+            </div>
+        </div>
+    </div>
+    <div class="slideshow-container" style="display: none;" id="carousel-taco-revista">
+
+        <div class="pageSlider page1" style="display: block;">
+            <div class="mySlides">
+                <div class="numbertext">1 / 2</div>
+                <img src="./assets/img/posts/post_08/01.png" class="imgInsideSlider">
+            </div>
+            <a class="prev" onclick="showPageSlider('.page2')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.page2')">&#10095;</a>
+            <br>
+            <div style="text-align:center">
+                <span class="dot active"></span>
+                <span class="dot" onclick="showPageSlider('.page2')"></span>
+            </div>
+        </div>
+
+        <div class="pageSlider page2">
+            <div class="mySlides">
+                <div class="numbertext">2 / 2</div>
+                <img src="./assets/img/posts/post_08/02.png" class="imgInsideSlider">
+            </div>
+            <a class="prev" onclick="showPageSlider('.page1')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.page1')">&#10095;</a>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="showPageSlider('.page1')"></span>
+                <span class="dot active"></span>
+            </div>
+        </div>
+    </div>
+    <div class="slideshow-container" style="display: none;" id="carousel-taco-media-off">
+
+        <div class="pageSlider page1" style="display: block;">
+            <div class="mySlides">
+                <div class="numbertext">1 / 2</div>
+                <img src="./assets/img/posts/post_09/01.png" class="imgInsideSlider">
+            </div>
+            <a class="prev" onclick="showPageSlider('.page2')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.page2')">&#10095;</a>
+            <br>
+            <div style="text-align:center">
+                <span class="dot active"></span>
+                <span class="dot" onclick="showPageSlider('.page2')"></span>
+            </div>
+        </div>
+
+        <div class="pageSlider page2">
+            <div class="mySlides">
+                <div class="numbertext">2 / 2</div>
+                <img src="./assets/img/posts/post_09/02.png" class="imgInsideSlider">
+            </div>
+            <a class="prev" onclick="showPageSlider('.page1')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.page1')">&#10095;</a>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="showPageSlider('.page1')"></span>
+                <span class="dot active"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="slideshow-container" style="display: none;" id="carousel-taco-anuncios">
+
+        <div class="pageSlider page1" style="display: block;">
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="./assets/img/posts/post_10/01.png" class="imgInsideSlider">
+            </div>
+            <a class="prev" onclick="showPageSlider('.page4')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.page2')">&#10095;</a>
+            <br>
+            <div style="text-align:center">
+                <span class="dot active"></span>
+                <span class="dot" onclick="showPageSlider('.page2')"></span>
+                <span class="dot" onclick="showPageSlider('.page3')"></span>
+                <span class="dot" onclick="showPageSlider('.page4')"></span>
+            </div>
+        </div>
+
+        <div class="pageSlider page2">
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="./assets/img/posts/post_10/02.png" class="imgInsideSlider">
+            </div>
+            <a class="prev" onclick="showPageSlider('.page1')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.page3')">&#10095;</a>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="showPageSlider('.page1')"></span>
+                <span class="dot active"></span>
+                <span class="dot" onclick="showPageSlider('.page3')"></span>
+                <span class="dot" onclick="showPageSlider('.page4')"></span>
+            </div>
+        </div>
+
+        <div class="pageSlider page3">
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="./assets/img/posts/post_10/03.png" class="imgInsideSlider">
+            </div>
+            <a class="prev" onclick="showPageSlider('.page2')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.page4')">&#10095;</a>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="showPageSlider('.page1')"></span>
+                <span class="dot" onclick="showPageSlider('.page2')"></span>
+                <span class="dot active"></span>
+                <span class="dot" onclick="showPageSlider('.page4')"></span>
+            </div>
+        </div>
+
+        <div class="pageSlider page4">
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="./assets/img/posts/post_10/04.png" class="imgInsideSlider">
+            </div>
+            <a class="prev" onclick="showPageSlider('.page3')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.page1')">&#10095;</a>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="showPageSlider('.page1')"></span>
+                <span class="dot" onclick="showPageSlider('.page2')"></span>
+                <span class="dot" onclick="showPageSlider('.page3')"></span>
+                <span class="dot active"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="slideshow-container" style="display: none;" id="carousel-taco-audios">
+
+        <div class="pageSlider page1" style="display: block;">
+            <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <div>
+                    <img src="./assets/img/posts/post_07/05.png" class="imgInsideSlider" style="display: block;">
+                    <audio controls>
+                        <source src="./assets/audios/taco_el_pancho/SPOT 1.mp3" type="audio/mpeg">
+                        Seu navegador não suporta reprodução de áudio.
+                    </audio>
+                </div>
+            </div>
+            <a class="prev" onclick="showPageSlider('.page3')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.page2')">&#10095;</a>
+            <br>
+            <div style="text-align:center">
+                <span class="dot active"></span>
+                <span class="dot" onclick="showPageSlider('.page2')"></span>
+                <span class="dot" onclick="showPageSlider('.page3')"></span>
+            </div>
+        </div>
+
+        <div class="pageSlider page2">
+            <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <div>
+                    <img src="./assets/img/posts/post_07/05.png" class="imgInsideSlider" style="display: block;">
+                    <audio controls>
+                        <source src="./assets/audios/taco_el_pancho/SPOT 2.mp3" type="audio/mpeg">
+                        Seu navegador não suporta reprodução de áudio.
+                    </audio>
+                </div>
+            </div>
+            <a class="prev" onclick="showPageSlider('.page1')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.page3')">&#10095;</a>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="showPageSlider('.page1')"></span>
+                <span class="dot active"></span>
+                <span class="dot" onclick="showPageSlider('.page3')"></span>
+            </div>
+        </div>
+
+        <div class="pageSlider page3">
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <div>
+                    <img src="./assets/img/posts/post_07/05.png" class="imgInsideSlider" style="display: block;">
+                    <audio controls>
+                        <source src="./assets/audios/taco_el_pancho/SPOT 3.mp3" type="audio/mpeg">
+                        Seu navegador não suporta reprodução de áudio.
+                    </audio>
+                </div>
+            </div>
+            <a class="prev" onclick="showPageSlider('.page2')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.page1')">&#10095;</a>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="showPageSlider('.page1')"></span>
+                <span class="dot" onclick="showPageSlider('.page2')"></span>
+                <span class="dot active"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./glightbox/glightbox.js"></script>
+    <script type="text/javascript">
+        var lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            selector: 'glightbox'
+        });
+
+        function showPageSlider(pageClassToShow) {
+            $(".pageSlider").hide();
+            $(pageClassToShow).show();
+        }
+    </script>
+</body>
+</html>
