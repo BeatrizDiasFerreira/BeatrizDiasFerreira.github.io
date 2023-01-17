@@ -10531,3 +10531,24 @@ body {
 .navbar-brand {
     margin-left: 16px;
 }
+
+#container-sobre-mim {
+    text-align: left;
+    margin-bottom: 5px; 
+    padding-left: 35px; 
+    align-self: center;
+}
+
+@media only screen and (max-width: 991px) {
+    #container-sobre-mim {
+        padding-left: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 573px) {
+    .gprev, .gnext {
+        display: none !important;
+    }
+}

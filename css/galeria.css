@@ -10,16 +10,6 @@
     }
 }
 
-@media only screen and (max-width: 880px) {
-    .mySlides img{
-        max-height:  320px !important;
-    }
-
-    .prev, .next{
-        display: none;
-    }
-}
-
 @media only screen and (max-width: 714px) {
     .mySlides img{
         max-width: 100% !important;

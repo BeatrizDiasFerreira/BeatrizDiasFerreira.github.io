@@ -195,7 +195,6 @@
   background: #fff;
   padding: 20px;
   text-align: left;
-  max-height: 62vh;
   overflow: auto;
 }
 
@@ -423,7 +422,7 @@ iframe.wait-autoplay {
   background-color: rgba(0, 0, 0, .08);
   background-position: 4px 5px;
   position: absolute;
-  top: -100%;
+  top: 45%;
   left: 30px;
   width: 38px;
   height: 56px;
@@ -433,7 +432,7 @@ iframe.wait-autoplay {
   background-color: rgba(0, 0, 0, .08);
   background-position: -27px 5px;
   position: absolute;
-  top: -100%;
+  top: 45%;
   right: 30px;
   width: 38px;
   height: 56px;
@@ -789,6 +788,8 @@ iframe.wait-autoplay {
   .glightbox-clean .gnext {
     top: 45%;
   }
+
+
 }
 
 @media (min-width: 62em) {
