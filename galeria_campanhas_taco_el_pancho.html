@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/slider.css">
 
     <style>
-        #carousel-taco-media-off, #carousel-taco-audios, #carousel-taco-anuncios {
+        #carousel-taco-media-off, #carousel-taco-audios, #carousel-taco-anuncios, #carousel-taco-revista {
             height: auto !important;
         }
 
@@ -74,35 +74,35 @@
                 <div class="col-md-6 col-lg-4 item">
                     <a class="glightbox" href="#carousel-taco-instagram">
                         <div class="img-fluid image scale-on-hover container-thumb" style="background: url(./assets/img/posts/post_07/01.png);">
-                            <div class="thumb-caption">Teste</div>
+                            <div class="thumb-caption">Instagram</div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
                     <a class="glightbox" href="#carousel-taco-revista">
                         <div class="img-fluid image scale-on-hover container-thumb" style="background: url(./assets/img/posts/post_08/01.png);">
-                            <div class="thumb-caption">Teste</div>
+                            <div class="thumb-caption">Revista</div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
                     <a class="glightbox" href="#carousel-taco-media-off">
                         <div class="img-fluid image scale-on-hover container-thumb" style="background: url(./assets/img/posts/post_09/01.png);">
-                            <div class="thumb-caption">Teste</div>
+                            <div class="thumb-caption">Mídia Offline</div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
                     <a class="glightbox" href="#carousel-taco-anuncios">
                         <div class="img-fluid image scale-on-hover container-thumb" style="background: url(./assets/img/posts/post_10/01.png);">
-                            <div class="thumb-caption">Teste</div>
+                            <div class="thumb-caption">Anúncios</div>
                         </div>
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4 item">
                     <a class="glightbox" href="#carousel-taco-audios">
                         <div class="img-fluid image scale-on-hover container-thumb" style="background: url(./assets/img/posts/post_07/05.png);">
-                            <div class="thumb-caption">Teste</div>
+                            <div class="thumb-caption">Áudio</div>
                         </div>
                     </a>
                 </div>
@@ -248,28 +248,45 @@
 
         <div class="pageSlider carousel-taco-revista carousel-taco-revista-1" style="display: block;">
             <div class="mySlides">
-                <div class="numbertext">1 / 2</div>
+                <div class="numbertext">1 / 3</div>
                 <img src="./assets/img/posts/post_08/01.png" class="imgInsideSlider">
             </div>
-            <a class="prev" onclick="showPageSlider('.carousel-taco-revista', '.carousel-taco-revista-2')">&#10094;</a>
+            <a class="prev" onclick="showPageSlider('.carousel-taco-revista', '.carousel-taco-revista-3')">&#10094;</a>
             <a class="next" onclick="showPageSlider('.carousel-taco-revista', '.carousel-taco-revista-2')">&#10095;</a>
             <br>
             <div style="text-align:center">
                 <span class="dot active"></span>
                 <span class="dot" onclick="showPageSlider('.carousel-taco-revista', '.carousel-taco-revista-2')"></span>
+                <span class="dot" onclick="showPageSlider('.carousel-taco-revista', '.carousel-taco-revista-3')"></span>
             </div>
         </div>
 
         <div class="pageSlider carousel-taco-revista carousel-taco-revista-2">
             <div class="mySlides">
-                <div class="numbertext">2 / 2</div>
+                <div class="numbertext">2 / 3</div>
                 <img src="./assets/img/posts/post_08/02.png" class="imgInsideSlider">
             </div>
             <a class="prev" onclick="showPageSlider('.carousel-taco-revista', '.carousel-taco-revista-1')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.carousel-taco-revista', '.carousel-taco-revista-3')">&#10095;</a>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="showPageSlider('.carousel-taco-revista', '.carousel-taco-revista-1')"></span>
+                <span class="dot active"></span>
+                <span class="dot" onclick="showPageSlider('.carousel-taco-revista', '.carousel-taco-revista-3')"></span>
+            </div>
+        </div>
+        
+        <div class="pageSlider carousel-taco-revista carousel-taco-revista-3">
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="./assets/img/posts/post_08/03.png" class="imgInsideSlider">
+            </div>
+            <a class="prev" onclick="showPageSlider('.carousel-taco-revista', '.carousel-taco-revista-2')">&#10094;</a>
             <a class="next" onclick="showPageSlider('.carousel-taco-revista', '.carousel-taco-revista-1')">&#10095;</a>
             <br>
             <div style="text-align:center">
                 <span class="dot" onclick="showPageSlider('.carousel-taco-revista', '.carousel-taco-revista-1')"></span>
+                <span class="dot" onclick="showPageSlider('.carousel-taco-revista', '.carousel-taco-revista-2')"></span>
                 <span class="dot active"></span>
             </div>
         </div>
@@ -278,28 +295,45 @@
 
         <div class="pageSlider carousel-taco-media-off carousel-taco-media-off-1" style="display: block;">
             <div class="mySlides">
-                <div class="numbertext">1 / 2</div>
+                <div class="numbertext">1 / 3</div>
                 <img src="./assets/img/posts/post_09/01.png" class="imgInsideSlider">
             </div>
-            <a class="prev" onclick="showPageSlider('.carousel-taco-media-off', '.carousel-taco-media-off-2')">&#10094;</a>
+            <a class="prev" onclick="showPageSlider('.carousel-taco-media-off', '.carousel-taco-media-off-3')">&#10094;</a>
             <a class="next" onclick="showPageSlider('.carousel-taco-media-off', '.carousel-taco-media-off-2')">&#10095;</a>
             <br>
             <div style="text-align:center">
                 <span class="dot active"></span>
                 <span class="dot" onclick="showPageSlider('.carousel-taco-media-off', '.carousel-taco-media-off-2')"></span>
+                <span class="dot" onclick="showPageSlider('.carousel-taco-media-off', '.carousel-taco-media-off-3')"></span>
             </div>
         </div>
 
         <div class="pageSlider carousel-taco-media-off carousel-taco-media-off-2">
             <div class="mySlides">
-                <div class="numbertext">2 / 2</div>
+                <div class="numbertext">2 / 3</div>
                 <img src="./assets/img/posts/post_09/02.png" class="imgInsideSlider">
             </div>
             <a class="prev" onclick="showPageSlider('.carousel-taco-media-off', '.carousel-taco-media-off-1')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.carousel-taco-media-off', '.carousel-taco-media-off-3')">&#10095;</a>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="showPageSlider('.carousel-taco-media-off', '.carousel-taco-media-off-1')"></span>
+                <span class="dot active"></span>
+                <span class="dot" onclick="showPageSlider('.carousel-taco-media-off', '.carousel-taco-media-off-3')"></span>
+            </div>
+        </div>
+
+        <div class="pageSlider carousel-taco-media-off carousel-taco-media-off-3">
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="./assets/img/posts/post_09/03.png" class="imgInsideSlider">
+            </div>
+            <a class="prev" onclick="showPageSlider('.carousel-taco-media-off', '.carousel-taco-media-off-2')">&#10094;</a>
             <a class="next" onclick="showPageSlider('.carousel-taco-media-off', '.carousel-taco-media-off-1')">&#10095;</a>
             <br>
             <div style="text-align:center">
                 <span class="dot" onclick="showPageSlider('.carousel-taco-media-off', '.carousel-taco-media-off-1')"></span>
+                <span class="dot" onclick="showPageSlider('.carousel-taco-media-off', '.carousel-taco-media-off-2')"></span>
                 <span class="dot active"></span>
             </div>
         </div>
