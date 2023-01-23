@@ -55,47 +55,47 @@
     </section>
     <div class="slideshow-container" style="display: none;" id="carousel-cansaco">
 
-        <div class="pageSlider page1" style="display: block;">
+        <div class="pageSlider carousel-cansaco carousel-cansaco-1" style="display: block;">
             <div class="mySlides">
                 <div class="numbertext">1 / 3</div>
                 <img src="./assets/img/posts/post_06/cansaco01.jpeg" class="imgInsideSlider">
             </div>
-            <a class="prev" onclick="showPageSlider('.page3')">&#10094;</a>
-            <a class="next" onclick="showPageSlider('.page2')">&#10095;</a>
+            <a class="prev" onclick="showPageSlider('.carousel-cansaco', '.carousel-cansaco-3')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.carousel-cansaco', '.carousel-cansaco-2')">&#10095;</a>
             <br>
             <div style="text-align:center">
                 <span class="dot active"></span>
-                <span class="dot" onclick="showPageSlider('.page2')"></span>
-                <span class="dot" onclick="showPageSlider('.page3')"></span>
+                <span class="dot" onclick="showPageSlider('.carousel-cansaco', '.carousel-cansaco-2')"></span>
+                <span class="dot" onclick="showPageSlider('.carousel-cansaco', '.carousel-cansaco-3')"></span>
             </div>
         </div>
 
-        <div class="pageSlider page2">
+        <div class="pageSlider carousel-cansaco carousel-cansaco-2">
             <div class="mySlides">
                 <div class="numbertext">2 / 3</div>
                 <img src="./assets/img/posts/post_06/cansaco02.jpeg" class="imgInsideSlider">
             </div>
-            <a class="prev" onclick="showPageSlider('.page1')">&#10094;</a>
-            <a class="next" onclick="showPageSlider('.page3')">&#10095;</a>
+            <a class="prev" onclick="showPageSlider('.carousel-cansaco', '.carousel-cansaco-1')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.carousel-cansaco', '.carousel-cansaco-3')">&#10095;</a>
             <br>
             <div style="text-align:center">
-                <span class="dot" onclick="showPageSlider('.page1')"></span>
+                <span class="dot" onclick="showPageSlider('.carousel-cansaco', '.carousel-cansaco-1')"></span>
                 <span class="dot active"></span>
-                <span class="dot" onclick="showPageSlider('.page3')"></span>
+                <span class="dot" onclick="showPageSlider('.carousel-cansaco', '.carousel-cansaco-3')"></span>
             </div>
         </div>
 
-        <div class="pageSlider page3">
+        <div class="pageSlider carousel-cansaco carousel-cansaco-3">
             <div class="mySlides">
                 <div class="numbertext">3 / 3</div>
                 <img src="./assets/img/posts/post_06/cansaco03.jpeg" class="imgInsideSlider">
             </div>
-            <a class="prev" onclick="showPageSlider('.page2')">&#10094;</a>
-            <a class="next" onclick="showPageSlider('.page1')">&#10095;</a>
+            <a class="prev" onclick="showPageSlider('.carousel-cansaco', '.carousel-cansaco-2')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.carousel-cansaco', '.carousel-cansaco-1')">&#10095;</a>
             <br>
             <div style="text-align:center">
-                <span class="dot" onclick="showPageSlider('.page1')"></span>
-                <span class="dot" onclick="showPageSlider('.page2')"></span>
+                <span class="dot" onclick="showPageSlider('.carousel-cansaco', '.carousel-cansaco-1')"></span>
+                <span class="dot" onclick="showPageSlider('.carousel-cansaco', '.carousel-cansaco-2')"></span>
                 <span class="dot active"></span>
             </div>
         </div>
@@ -103,30 +103,30 @@
 
     <div class="slideshow-container" style="display: none;" id="carousel-higiene">
 
-        <div class="pageSlider page1" style="display: block;">
+        <div class="pageSlider carousel-higiene carousel-higiene-1" style="display: block;">
             <div class="mySlides">
                 <div class="numbertext">1 / 2</div>
                 <img src="./assets/img/posts/post_06/higiene01.jpeg" class="imgInsideSlider">
             </div>
-            <a class="prev" onclick="showPageSlider('.page2')">&#10094;</a>
-            <a class="next" onclick="showPageSlider('.page2')">&#10095;</a>
+            <a class="prev" onclick="showPageSlider('.carousel-higiene', '.carousel-higiene-2')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.carousel-higiene', '.carousel-higiene-2')">&#10095;</a>
             <br>
             <div style="text-align:center">
                 <span class="dot active"></span>
-                <span class="dot" onclick="showPageSlider('.page2')"></span>
+                <span class="dot" onclick="showPageSlider('.carousel-higiene', '.carousel-higiene-2')"></span>
             </div>
         </div>
 
-        <div class="pageSlider page2">
+        <div class="pageSlider carousel-higiene carousel-higiene-2">
             <div class="mySlides">
                 <div class="numbertext">2 / 2</div>
                 <img src="./assets/img/posts/post_06/higiene02.jpeg" class="imgInsideSlider">
             </div>
-            <a class="prev" onclick="showPageSlider('.page1')">&#10094;</a>
-            <a class="next" onclick="showPageSlider('.page1')">&#10095;</a>
+            <a class="prev" onclick="showPageSlider('.carousel-higiene', '.carousel-higiene-1')">&#10094;</a>
+            <a class="next" onclick="showPageSlider('.carousel-higiene', '.carousel-higiene-1')">&#10095;</a>
             <br>
             <div style="text-align:center">
-                <span class="dot" onclick="showPageSlider('.page1')"></span>
+                <span class="dot" onclick="showPageSlider('.carousel-higiene', '.carousel-higiene-1')"></span>
                 <span class="dot active"></span>
             </div>
         </div>
@@ -143,9 +143,9 @@
             selector: 'glightbox'
         });
 
-        function showPageSlider(pageClassToShow) {
-            $(".pageSlider").hide();
-            $(pageClassToShow).show();
+        function showPageSlider(carouselItens, pageIdToShow) {
+            $(carouselItens).hide();
+            $(pageIdToShow).show();
         }
     </script>
 </body>
