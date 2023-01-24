@@ -10552,3 +10552,8 @@ body {
         display: none !important;
     }
 }
+
+.navbar-brand {
+    font-size: 20px !important;
+    line-height: 13px !important;
+}
